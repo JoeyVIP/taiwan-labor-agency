@@ -1,0 +1,36 @@
+{
+  "name": "taiwan-labor-agency",
+  "version": "1.0.0",
+  "description": "台灣人力仲介專業網站",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p ${PORT:-3000}",
+    "lint": "next lint",
+    "payload": "payload",
+    "generate:types": "payload generate:types"
+  },
+  "keywords": ["labor", "recruitment", "agency"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^15.4.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "payload": "^3.78.0",
+    "@payloadcms/next": "^3.78.0",
+    "@payloadcms/db-mongodb": "^3.78.0",
+    "@payloadcms/richtext-slate": "^3.78.0",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^15.4.0"
+  }
+}
