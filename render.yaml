@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: taiwan-labor-agency
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: PAYLOAD_SECRET
+        generateValue: true
+      - key: DATABASE_URI
+        sync: false
